@@ -16,7 +16,7 @@ public class ControllerFrase {
 		int vocaliTrovate=trovaVocali(testo);
 		int consonantiTrovate=trovaConsonanti(testo);
 		int frasiTrovate=trovaNumeroFrasi(testo);
-		testo="Il numero di vocali è: "+vocaliTrovate+" il numero di consonanti è: "+consonantiTrovate+" il numero di frasi è "+frasiTrovate;
+		testo="Frase inserita "+" ' "+testo+" ' "+"  Il numero di vocali è: "+vocaliTrovate+" il numero di consonanti è: "+consonantiTrovate+" il numero di frasi è "+frasiTrovate;
 		
 		return new ModelAndView("risultato", "testo", testo);
 	}
