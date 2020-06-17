@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-Il testo inserito : <b>${testo}</b>
+Il testo da analizzare è : <b>${testo}</b>
+<br><br>
+Il risultato dell'operazione è ${risultato }
 </body>
 </html>

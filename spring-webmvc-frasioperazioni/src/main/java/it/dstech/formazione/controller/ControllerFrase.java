@@ -13,14 +13,23 @@ public class ControllerFrase {
 	@RequestMapping(value = "/testChiamata" , method = RequestMethod.POST )
 	public ModelAndView checkParameter(@RequestParam("testo") String testo, Model model) {
 	      
+	/*
 		int vocaliTrovate=trovaVocali(testo);
 		int consonantiTrovate=trovaConsonanti(testo);
 		int frasiTrovate=trovaNumeroFrasi(testo);
 		testo="Frase inserita "+" ' "+testo+" ' "+"  Il numero di vocali è: "+vocaliTrovate+" il numero di consonanti è: "+consonantiTrovate+" il numero di frasi è "+frasiTrovate;
 		
 		return new ModelAndView("risultato", "testo", testo);
+		*/
+		//System.out.println("Controllafrase    "+testo);
+		ModelAndView prossimaPaginaJSP=new ModelAndView();
+		prossimaPaginaJSP.setViewName("sceltaOperazioni");
+		prossimaPaginaJSP.addObject("testo", testo);
+		return prossimaPaginaJSP;
+		
 	}
-
+	
+/*
 	public static  int trovaVocali(String frase) {
 		int contaVocali=0;		
 		for(int i=0; i<frase.length(); i++) {
@@ -61,6 +70,7 @@ public class ControllerFrase {
 		contaFrasi=contaFrasi+1;
 		return contaFrasi;		
 	}
+	*/
 }
 
 

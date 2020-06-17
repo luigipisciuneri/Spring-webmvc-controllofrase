@@ -9,6 +9,7 @@
 <body>
 <form action="testChiamata" method="post">
 		<input type="text" name="testo" placeholder="Inserisci il testo">
+		
 		<input type="submit" value="Invio">
 	</form>
 </body>
